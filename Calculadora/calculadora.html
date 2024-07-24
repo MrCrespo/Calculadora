@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="calculadora">
+        <div class="display-container">
+            <div id="operacao-anterior" class="operacao-anterior"></div>
+            <div id="display" class="display">
+                <span id="display-anterior" class="display-anterior"></span>
+                <span id="display-atual" class="display-atual"></span>
+            </div>
+        </div>
+        <div class="botoes">
+            <button class="btn" onclick="limparDisplay()">C</button>
+            <button class="btn" onclick="calcularRaizQuadrada()">√</button>
+            <button class="btn" onclick="escolherOperacao('%')">%</button>
+            <button class="btn" onclick="escolherOperacao('/')">/</button>
+            
+            <button class="btn" onclick="adicionarNumero('7')">7</button>
+            <button class="btn" onclick="adicionarNumero('8')">8</button>
+            <button class="btn" onclick="adicionarNumero('9')">9</button>
+            <button class="btn" onclick="escolherOperacao('*')">*</button>
+
+            <button class="btn" onclick="adicionarNumero('4')">4</button>
+            <button class="btn" onclick="adicionarNumero('5')">5</button>
+            <button class="btn" onclick="adicionarNumero('6')">6</button>
+            <button class="btn" onclick="escolherOperacao('-')">-</button>
+            
+            <button class="btn" onclick="adicionarNumero('1')">1</button>
+            <button class="btn" onclick="adicionarNumero('2')">2</button>
+            <button class="btn" onclick="adicionarNumero('3')">3</button>
+            <button class="btn" onclick="escolherOperacao('+')">+</button>
+            
+            <button class="btn" onclick="backspace()">⌫</button>
+            <button class="btn" onclick="adicionarNumero('0')">0</button>
+            <button class="btn" onclick="adicionarNumero('.')">.</button>
+            <button class="btn btn-igual" onclick="calcular()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
